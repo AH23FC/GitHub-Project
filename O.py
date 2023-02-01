@@ -23,3 +23,35 @@ def OH_calculation():
   - This function finds which overhead is the highest among all of them, and writes the category name in the txt file
   - This function has no parameters 
   """
+#Setting original values for varibales as local variables
+day_counter=0
+NP_new=0
+NP_high=0
+#Setting a while loop which ends when all items in the overheads file are covered
+While day_counter < len(overheads):
+  #Creating varibale capturing the Overheads' values which changes when the day_counter variable changes
+  NP_new = float(overheads[day_counter][1])
+  #Setting condition to check which variable is larger in numeric value
+  if NP_new > NP_high:
+    # If the condition is met, replace the value of NP_new with NP_high
+    NP_high = NP_new
+    # NP_cat variable is the highest overheads category
+    NP_cat= Overheads[day_counter[0]
+    # Using mode "w" to write data in the file
+    with file_path.open(mode = "w", encoding = "UTF-8") as file:
+        # text to be written in the file
+        file.write(f"{HIGHEST OVERHEADS] {NP_cat): {NP_high}%")
+# Add 1 to the variable until the loop ends
+day_counter += 1
+# Ending the function
+return
+# call for the result of the function
+OH_calculation()
+
+
+
+          
+                  
+                      
+                      
+ 
