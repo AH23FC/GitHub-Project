@@ -12,7 +12,7 @@ with fp.open(mode = "r", encoding = "UTF-8", newline = "") as file:
     # Creating a for loop to gather all the data from the Cash on Hand.csv file
     for column in reader:
         # Storing data using .append
-        cash_on_hand.append([column[0], column[1])
+        cash_on_hand.append([column[0], column[1]])
 
 # Referencing the created file "Summary_report.txt" to add information
 file_path = Path.cwd()/"summary_report.txt"
