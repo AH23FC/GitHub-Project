@@ -41,16 +41,10 @@ def OH_calculation():
             with file_path.open(mode = "w", encoding = "UTF-8") as file:
                 # text to be written in the file
                 file.write(f"{HIGHEST OVERHEADS] {NP_cat): {NP_high}%")
-
-
-
-
-
-
-# Add 1 to the variable until the loop ends
-day_counter += 1
-# Ending the function
-return
+        # Add 1 to the variable until the loop ends
+        day_counter += 1
+    # Ending the function
+    return
 # call for the result of the function
 OH_calculation()
 
