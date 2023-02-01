@@ -47,8 +47,6 @@ def OH_calculation():
 
 
 
-
-
 # Add 1 to the variable until the loop ends
 day_counter += 1
 # Ending the function
