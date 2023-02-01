@@ -24,7 +24,7 @@ def PL_calculation
     - The function has no parameters
     """
   # setting original values for old and new  day variables as local variables 
-  old day = 0
+  old_day = 0
   new_day = 1
   # setting a while loop which ends when all items in the overheads file are covered
   while new_day < len(profit_loss):
@@ -44,8 +44,8 @@ def PL_calculation
       with file_path.open(mode = "a", encoding = "UTF-8") as file:
         # text to be written in the file
         file.write(f"\n[PROFIT DEFICIT] DAY: {new_day +39}, AMOUNT: USD(abs(diff)}")
-  # Ending the function
-  return
+    # Ending the function
+    return
 # call for the result of the function
 PL_calculation()
       
