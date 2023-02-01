@@ -1,5 +1,5 @@
 from pathlib import Path
-import.csv
+import csv
 # Referencing Overheads.csv file from csv_reports folder
 fp = Path(r"C:\csv_reports\Overheads.csv")
 # read the csv file to append Category and Overheads from the csv.
