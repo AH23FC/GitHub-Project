@@ -43,7 +43,7 @@ def PL_calculation():
             # if condition is not, use mode = "a" to asdd to ecisting data in file
             with file_path.open(mode = "a", encoding = "UTF-8") as file:
                 # text to be written in the file
-                file.write(f"\n[PROFIT DEFICIT] DAY: {new_day +39}, AMOUNT: USD(abs(diff)}")
+                file.write(f"\n[PROFIT DEFICIT] DAY: {new_day +39}, AMOUNT: USD{abs(diff)}")
     # Ending the function
     return
 # call for the result of the function
