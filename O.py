@@ -11,8 +11,8 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     overheads = []
     # Creating a for loop to gather all the data from the Overheads.csv file
     for column in reader:
-    # Storing data using .append()
-    overheads.append([column[0], column[1]])
+        # Storing data using .append()
+        overheads.append([column[0], column[1]])
 # creating a new file_path and creating a new file "summary_report.txt"
 file_path = Path.cwd()/"summary_report.txt"
 # creating the new file "summary_report.txt" using .touch()
@@ -28,7 +28,7 @@ def OH_calculation():
     NP_new= 0
     NP_high= 0
     #Setting a while loop which ends when all items in the overheads file are covered
-    While day_counter < len(overheads):
+    while day_counter < len(overheads):
         # Creating varibale capturing the Overheads' values which changes when the day_counter variable changes
         NP_new = float(overheads[day_counter][1])
         #Setting condition to check which variable is larger in numeric value
@@ -40,7 +40,7 @@ def OH_calculation():
             # Using mode "w" to write data in the file
             with file_path.open(mode = "w", encoding = "UTF-8") as file:
                 # text to be written in the file
-                file.write(f"{HIGHEST OVERHEADS] {NP_cat): {NP_high}%")
+                file.write(f"[HIGHEST OVERHEADS] {NP_cat}: {NP_high}%")
         # Add 1 to the variable until the loop ends
         day_counter += 1
     # Ending the function
