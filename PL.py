@@ -1,5 +1,5 @@
 from pathlib import Path
-import.csv
+import csv
 # Referencing Profit and Loss.csv file from csv_reports folder
 fp =Path(r"C:\csv_reports\Proit and Loss.csv")
 # read the csv file to append Day, Sales, Trading Prodit,  Operating expense and Net Profit from the  csv.
