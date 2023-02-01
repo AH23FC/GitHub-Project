@@ -29,7 +29,7 @@ def OH_calculation():
     NP_high= 0
     #Setting a while loop which ends when all items in the overheads file are covered
     While day_counter < len(overheads):
-        #Creating varibale capturing the Overheads' values which changes when the day_counter variable changes
+        # Creating varibale capturing the Overheads' values which changes when the day_counter variable changes
         NP_new = float(overheads[day_counter][1])
         #Setting condition to check which variable is larger in numeric value
         if NP_new > NP_high:
