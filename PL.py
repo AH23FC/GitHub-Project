@@ -10,7 +10,7 @@ with fp.open(mode="r", encoding="UTF-8", newline= "") as file:
     # create an empty list to store the data
     profit_loss =[]
     # creating a lopp to gather all the data from the Profit and Loss.csv file 
-    for colum in reader:
+    for column in reader:
       # Storing data using .append()
       profit_loss.append([column[0], column[1], column[2], column [3], column[4]])
 # referencing the created file "summary_report.txt" to add information
