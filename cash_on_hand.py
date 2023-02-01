@@ -1,6 +1,6 @@
 from pathlib import Path
 import csv
-# Referencing Cash on Hand.csv file from csv_reports folder
+# Referencing Cash on Hand.csv file from csv_reports folder, hello my name is jen wen
 fp = Path(r"C:\csv_reports\Cash on Hand.csv")
 # read the csv file to append profit and quantity from the csv.
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
