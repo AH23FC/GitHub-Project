@@ -48,6 +48,3 @@ def PL_calculation():
     return
 # call for the result of the functions
 PL_calculation()
-      
-  
-hello

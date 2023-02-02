@@ -37,7 +37,7 @@ def OH_calculation():
             # If the condition is met, replace the value of NP_new with NP_high
             NP_high = NP_new
             # NP cat variable is the highest overheads category
-            NP_cat= overheads[day_counter[0]]
+            NP_cat= overheads[day_counter][0]
             # Using mode "w" to write data in the file
             with file_path.open(mode = "w", encoding = "UTF-8") as file:
                 # text to be written in the file
