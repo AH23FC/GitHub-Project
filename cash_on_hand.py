@@ -2,12 +2,12 @@ from pathlib import Path
 import csv
 # Referencing Cash On Hand.csv from csv_report folder
 fp = Path.cwd()/"csv_reports"/"Cash on Hand.csv"
-# Read the CSV file to append rofit and quantity from the csv
-with fp.open(mode="r", encoding="UTF-8", newline="") as file:
+# Read the CSV file to append the profit and quantity from the csv
+with fp.open(mode="r",encoding="UTF-8",newline="") as file:
     reader = csv.reader(file)
     # Skip header
     next(reader)
-    # Create an empty list to store day and cash amount
+    #Create an empty list to store day and cash amount
     cash_on_hand = []
     # Creating a for loop to gather all the data from the Cash on Hand.csv file
     for column in reader:
