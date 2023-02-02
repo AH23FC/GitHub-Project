@@ -23,28 +23,26 @@ def PL_calculation():
     - The function calculates the difference between days' net profit amounts and writes any deficit in the txt file
     - The function has no parameters
     """
-    # setting original values for old and new  day variables as local variables 
-    old_day = 0
-    new_day = 1
-    # setting a while loop which ends when all items in the overheads file are covered
+    #setting the original values for old and new day variable as local variables
+    old_day =0
+    new_day =1
+    #setting a while loop which ends when all items in the overheadsm file are covered
     while new_day < len(profit_loss):
-        # creating variable to hold old_day's Net Profit amount
-        old_day_value = int(profit_loss[old_day][4])
-        # creating variable to hold new_day's Net Profit amount
-        new_day_value = int(profit_loss[new_day][4])
-        # subtracting the variables to find the difference between them, and setting the calue to variable diff
+        #creating variable to hold old_day's Net Profit amount
+        old_day_value =int( profit_loss[old_day[4]] )
+        #creating variable to hold new_day's Net Profit amount
+        new_day_value =int( profit_loss[new_day[4]] )
+        #subtractng the variables to find the difference between the, and the setting the value to variable difference
         diff = new_day_value - old_day_value
-        # Add 1 to the variable until the loop ends 
-        old_day += 1
-        # Add 1 to the variable until the loop ends
+        # add 1 to the variables till the loop ends
+        old_day += 0
         new_day += 1
-        # setting on condition to check if the value stores in the diff variable is negative
-        if diff < 0:
-            # if condition is not, use mode = "a" to asdd to ecisting data in file
+        #setting on condition to check if the value stores the in the different variable is negative
+        if diff <0 :
+            # if condition is not, use the mode = "a" to add to existing data in file
             with file_path.open(mode = "a", encoding = "UTF-8") as file:
-                # text to be written in the file
                 file.write(f"\n[PROFIT DEFICIT] DAY: {new_day +39}, AMOUNT: USD{abs(diff)}")
-    # Ending the function
+    #ending the function
     return
-# call for the result of the functions
+#calling for the result of the function
 PL_calculation()
