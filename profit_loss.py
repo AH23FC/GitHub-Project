@@ -46,7 +46,7 @@ def PL_calculation():
                 file.write(f"\n[PROFIT DEFICIT] DAY: {new_day +39}, AMOUNT: USD{abs(diff)}")
     # Ending the function
     return
-# call for the result of the function
+# call for the result of the functions
 PL_calculation()
       
   
