@@ -3,16 +3,16 @@ import csv
 # Referencing Profit and Loss.csv file from csv_reports folder
 fp = Path.cwd()/"csv_reports"/"Profit and Loss.csv"
 # read the csv file to append Day, Sales, Trading Prodit,  Operating expense and Net Profit from the  csv.
-with fp.open(mode="r", encoding="UTF-8", newline="") as file:
+with fp.open( mode="r", encoding="UTF-8", newline="") as file: 
     reader = csv.reader(file)
-    # Skipping the header
+    #skipping the header
     next(reader)
-    # create an empty list to store the data
-    profit_loss =[]
-    # creating a lopp to gather all the data from the Profit and Loss.csv file 
+    # create an empty list to store the datas
+    profit_loss = []
+    #creating a loop to gather all the data from the Profit and Loss.csv file
     for column in reader:
-      # Storing data using .append()
-      profit_loss.append([column[0], column[1], column[2], column [3], column[4]])
+        #storing data using .append()
+        profit_loss.append( [column[0], column[1], column[2], column[3], column[4]] )
 # referencing the created file "summary_report.txt" to add information
 file_path = Path.cwd()/"summary_report.txt"
 
